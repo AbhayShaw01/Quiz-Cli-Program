@@ -4,7 +4,7 @@ console.log("Hello " + userInput + "!");
 console.log("Welcome to the quiz!");
 console.log("You will be asked 3 questions. You will get 1 point for each correct answer.");
 console.log("You will lose 1 point for each incorrect answer.");
-var check = readlineSync.question("Before Starting !!Tell us if you know Abhay( Type Yes or No).").trim.toUpperCase()
+var check = readlineSync.question("Before Starting !!Tell us if you know Abhay( Type Yes or No).").trim().toUpperCase()
 if (check == "YES") {
     console.log("Great! Let's start the quiz");
 
