@@ -57,8 +57,5 @@ function highscore(list) {
     
     
 }
-
-
-
 play(userInput);//function call
 
