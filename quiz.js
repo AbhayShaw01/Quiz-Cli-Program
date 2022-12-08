@@ -1,3 +1,5 @@
+
+
 var readlineSync = require('readline-sync');
 var userInput = readlineSync.question("What is your name? ");
 console.log("Hello " + userInput + "!");
@@ -32,7 +34,7 @@ function play(userInput) {
     ];
     for (var i = 0; i < questions.length; i++) {//loop to check if user input is equal to the answer
         var currentQuestion = questions[i];
-        var userAnswer = readlineSync.question(currentQuestion.question);
+        var userAnswer = readlineSync.question(currentQuestion.question).trim().toUpperCase();
         if (userAnswer === currentQuestion.answer) {
             console.log("You are right!");
             score++;
@@ -58,4 +60,3 @@ function highscore(list) {
     
 }
 play(userInput);//function call
-
