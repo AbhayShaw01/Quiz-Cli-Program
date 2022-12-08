@@ -4,8 +4,8 @@ console.log("Hello " + userInput + "!");
 console.log("Welcome to the quiz!");
 console.log("You will be asked 3 questions. You will get 1 point for each correct answer.");
 console.log("You will lose 1 point for each incorrect answer.");
-var check = readlineSync.question("Before Starting !!Tell us if you know Abhay( Type Yes or No).")
-if (check == "Yes") {
+var check = readlineSync.question("Before Starting !!Tell us if you know Abhay( Type Yes or No).").trim.toUpperCase()
+if (check == "YES") {
     console.log("Great! Let's start the quiz");
 
 }
@@ -19,15 +19,15 @@ function play(userInput) {
 
     var questions = [{//array of objects    
         question: "Where does Abhay live?",
-        answer: "Mumbai"
+        answer: "MUMBAI"
     },
     {
         question: "What is Abhay's favourite food?",
-        answer: "Pizza"
+        answer: "PIZZA"
     },
     {
         question: "What is Abhay's favourite sport?",
-        answer: "Cricket"
+        answer: "CRICKET"
     }
     ];
     for (var i = 0; i < questions.length; i++) {//loop to check if user input is equal to the answer
